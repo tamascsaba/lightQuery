@@ -401,7 +401,7 @@
                     }
                 });
 
-                return previousElements.length ? previousElements : this;
+                return previousElements.length ? $(previousElements) : this;
             }
         },
         next: {
@@ -418,7 +418,7 @@
                     }
                 });
 
-                return nextElements.length ? nextElements : this;
+                return nextElements.length ? $(nextElements) : this;
             }
         },
         first: {
@@ -432,7 +432,7 @@
                     firstElement.push(element.firstElementChild);
                 });
 
-                return firstElement;
+                return $(firstElement);
             }
         },
         last: {
@@ -447,7 +447,7 @@
                     lastElements.push(element.lastElementChild);
                 });
 
-                return lastElements;
+                return $(lastElements);
             }
         },
     });
